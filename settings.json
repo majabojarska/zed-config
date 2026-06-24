@@ -8,6 +8,11 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "diff_view_style": "unified",
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry"
+    }
+  },
   "autosave": "on_focus_change",
   "autoscroll_on_clicks": true,
   "buffer_font_family": "Hack",
