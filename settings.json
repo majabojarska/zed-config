@@ -23,7 +23,7 @@
   "current_line_highlight": "none",
   "cursor_shape": "bar",
   "format_on_save": "off",
-  "git_panel": { "dock": "left" },
+  "git_panel": { "tree_view": true, "dock": "left" },
   "icon_theme": "Colored Zed Icons Theme Dark",
   "project_panel": { "dock": "left" },
   "theme": "0x96f Theme",
