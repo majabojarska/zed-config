@@ -9,11 +9,29 @@
 {
   "mouse_wheel_zoom": true,
   "diff_view_style": "unified",
+  "auto_signature_help": true,
+  "edit_predictions": {
+    "provider": "copilot",
+  },
+  "status_bar": {
+    "show_active_file": true,
+  },
+  "git_panel": {
+    "diff_stats": true,
+    "file_icons": true,
+    "tree_view": true,
+    "dock": "right",
+  },
+  "show_whitespaces": "selection",
   "agent_servers": {
     "claude-acp": {
+      "favorite_config_option_values": {
+        "model": ["haiku"],
+      },
       "default_config_options": {
-        "mode": "acceptEdits",
-        "model": "haiku",
+        "effort": "medium",
+        "mode": "plan",
+        "model": "sonnet",
       },
       "type": "registry",
     },
@@ -28,10 +46,17 @@
   "current_line_highlight": "none",
   "cursor_shape": "bar",
   "format_on_save": "off",
-  "git_panel": { "tree_view": true, "dock": "left" },
-  "icon_theme": "Colored Zed Icons Theme Dark",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Colored Zed Icons Theme Dark",
+    "dark": "Colored Zed Icons Theme Dark",
+  },
   "project_panel": { "dock": "left" },
-  "theme": "0x96f Theme",
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
   "ui_font_family": ".SystemUIFont",
   "ui_font_size": 16,
   "vim_mode": true,
