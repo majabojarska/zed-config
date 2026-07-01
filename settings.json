@@ -39,7 +39,7 @@
   "autosave": "on_focus_change",
   "autoscroll_on_clicks": true,
   "buffer_font_family": "Hack",
-  "buffer_font_size": 16.0,
+  "buffer_font_size": 14.0,
   "buffer_font_features": {},
   "buffer_font_weight": 300,
   "buffer_line_height": { "custom": 1.4 },
@@ -58,7 +58,7 @@
     "dark": "One Dark",
   },
   "ui_font_family": ".SystemUIFont",
-  "ui_font_size": 16,
+  "ui_font_size": 14,
   "vim_mode": true,
   "git": {
     "inline_blame": {
