@@ -70,4 +70,5 @@
   "use_smartcase_search": true,
   "expand_excerpt_lines": 16,
   "excerpt_context_lines": 16,
+  "relative_line_numbers": "enabled"
 }
