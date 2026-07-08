@@ -67,4 +67,5 @@
       "enabled": false,
     },
   },
+  "use_smartcase_search": true,
 }
