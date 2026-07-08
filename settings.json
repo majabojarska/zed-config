@@ -70,5 +70,19 @@
   "use_smartcase_search": true,
   "expand_excerpt_lines": 16,
   "excerpt_context_lines": 16,
-  "relative_line_numbers": "enabled"
+  "relative_line_numbers": "enabled",
+  "file_scan_exclusions": [
+    // Defaults
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    // Extras
+    "*.pb.go",
+  ],
 }
