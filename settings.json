@@ -7,10 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "show_edit_predictions": false,
   "mouse_wheel_zoom": true,
   "diff_view_style": "unified",
   "auto_signature_help": true,
   "edit_predictions": {
+    "mode": "subtle",
     "provider": "copilot",
   },
   "status_bar": {
@@ -29,9 +31,9 @@
         "model": ["haiku"],
       },
       "default_config_options": {
-        "effort": "medium",
+        "effort": "default",
         "mode": "plan",
-        "model": "sonnet",
+        "model": "opus[1m]",
       },
       "type": "registry",
     },
