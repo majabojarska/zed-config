@@ -26,6 +26,19 @@
   },
   "show_whitespaces": "selection",
   "agent_servers": {
+    "github-copilot-cli": {
+      "favorite_config_option_values": {
+        "allow_all": [
+          "on"
+        ]
+      },
+      "default_config_options": {
+        "mode": "https://agentclientprotocol.com/protocol/session-modes#agent",
+        "allow_all": "off",
+        "model": "claude-sonnet-4.6"
+      },
+      "type": "registry"
+    },
     "claude-acp": {
       "favorite_config_option_values": {
         "model": ["haiku"],
