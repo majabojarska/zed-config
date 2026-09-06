@@ -7,6 +7,97 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+  },
+  "proxy": "",
+  "agent": {
+    "notify_when_agent_waiting": "all_screens",
+    "thinking_display": "always_collapsed",
+    "tool_permissions": {
+      "default": "confirm",
+      "tools": {
+        "mcp:mcp-server-godot:get_project_info": {
+          "default": "allow"
+        },
+        "delete_path": {
+          "always_allow": [
+            {
+              "pattern": "^M-Vave-Chocolate-Plus/open-chocolate/src/lib/"
+            },
+            {
+              "pattern": "^M-Vave-Chocolate-Plus/reverse-engineering/"
+            }
+          ],
+        },
+        "create_directory": {
+          "always_allow": [
+            {
+              "pattern": "^M-Vave-Chocolate-Plus/open-chocolate/src/lib/"
+            },
+            {
+              "pattern": "^/home/maja/Projects/majabojarska/M-Vave-Chocolate-Plus/reverse-engineering/"
+            },
+            {
+              "pattern": "^/home/maja/Projects/majabojarska/M-Vave-Chocolate-Plus/open-chocolate/src/"
+            },
+            {
+              "pattern": "^M-Vave-Chocolate-Plus/open-chocolate/native/"
+            }
+          ],
+        },
+        "write_file": {
+          "always_allow": [
+            {
+              "pattern": "/home/majabojarska/Projects/M-Vave-Chocolate-Plus",
+            },
+          ],
+        },
+        "terminal": {
+          "default": "allow",
+          "always_allow": [],
+        },
+      },
+    },
+    "flexible": true,
+    "dock": "right",
+    "sandbox_permissions": {
+      "allow_all_hosts": true,
+      "allow_unsandboxed": true,
+      "network_hosts": ["github.com"],
+      "write_paths": [
+        "/home/maja/Projects/majabojarska/M-Vave-Chocolate-Plus",
+        "/home/maja/Projects/majabojarska/infra",
+      ],
+    },
+    "default_model": {
+      "provider": "openrouter",
+      "model": "~deepseek/deepseek-v4-flash-latest",
+      "enable_thinking": false,
+    },
+    "favorite_models": [],
+    "default_profile": "write",
+    "model_parameters": [],
+  },
+  "languages": {
+    "Nix": {
+      "show_edit_predictions": true,
+    },
+  },
   "show_edit_predictions": false,
   "cli_default_open_behavior": "existing_window",
   "mouse_wheel_zoom": true,
@@ -29,16 +120,15 @@
   "agent_servers": {
     "github-copilot-cli": {
       "favorite_config_option_values": {
-        "allow_all": [
-          "on"
-        ]
+        "allow_all": ["on"],
       },
       "default_config_options": {
+        "reasoning_effort": "low",
         "mode": "https://agentclientprotocol.com/protocol/session-modes#agent",
         "allow_all": "off",
-        "model": "claude-sonnet-4.6"
+        "model": "gpt-5.6-luna",
       },
-      "type": "registry"
+      "type": "registry",
     },
     "claude-acp": {
       "favorite_config_option_values": {
@@ -99,4 +189,43 @@
     // Extras
     "*.pb.go",
   ],
+  // "language_models": {
+  //   "openai_compatible": {
+  //     "openrouter": {
+  //       "api_url": "https://openrouter.ai/api/v1",
+  //       "available_models": [
+  //         {
+  //           "name": "minimax/minimax-m3:free",
+  //           "display_name": "MiniMax M3 (OpenRouter)",
+  //           "max_tokens": 0,
+  //         },
+  //         {
+  //           "name": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  //           "display_name": "NVIDIA: Nemotron 3 Ultra (free)",
+  //           "max_tokens": 0,
+  //         },
+  //         {
+  //           "name": "openrouter/free",
+  //           "display_name": "OpenRouter free",
+  //           "max_tokens": 0,
+  //         },
+  //         {
+  //           "name": "z-ai/glm-5.3-flash",
+  //           "display_name": "Z.ai: GLM 5.3 Flash (paid)",
+  //           "max_tokens": 0,
+  //         },
+  //         {
+  //           "name": "~deepseek/deepseek-v4-flash-latest",
+  //           "display_name": "DeepSeek V4 Flash Latest",
+  //           "max_tokens": 0,
+  //         },
+  //         {
+  //           "name": "meta/muse-spark-1.3-contributor",
+  //           "display_name": "Meta: Muse Spark 1.3 Contributor",
+  //           "max_tokens": 0,
+  //         },
+  //       ],
+  //     },
+  //   },
+  // },
 }
